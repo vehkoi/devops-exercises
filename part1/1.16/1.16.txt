@@ -1,0 +1,12 @@
+I published frontend example to this address: https://frontend-example-devops.fly.dev/. Dockerfile is same as in ex 1.12
+
+Terminal:
+$ cd to root directory of the projectg
+$ flyctl launch --now 
+
+$ Creating app in ../material-applications/example-frontend
+$ Scanning source code
+$ Detected a NodeJS app
+$ Choose an app name (leave blank to generate one): frontend-example-devops
+-> chose server and all done
+

@@ -1,0 +1,51 @@
+Script started on 2023-04-06 20:15:10+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="173" LINES="46"]
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ [7mdocker ps -as[27mdocker ps -as
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                          PORTS     NAMES              SIZE
+39ac9d8d1755   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) About a minute ago             stoic_banzai       1.09kB (virtual 142MB)
+2b7bb6e83ad4   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) About a minute ago             angry_ptolemy      1.09kB (virtual 142MB)
+b7ad67163035   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute               80/tcp    eloquent_galileo   1.09kB (virtual 142MB)
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ docker stop [K[K[K[K[Kcontainer stop b7 [K
+[?2004lb7
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ [7mdocker images[27mdocker images
+[?2004lREPOSITORY   TAG       IMAGE ID       CREATED      SIZE
+nginx        latest    080ed0ed8312   8 days ago   142MB
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ [7mdocker container prune[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker container prune
+[?2004lWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] yt 
+Deleted Containers:
+39ac9d8d175520e4aadcbcff44c30a8226323026a6524589a2d98d93789c5b1f
+2b7bb6e83ad425a8ded6cc91c2180b02886d2fb6500e48df532359c559773e2d
+b7ad67163035db137911397a1c2d219184b79bdb0a5c56e0e1598b4286a84e75
+
+Total reclaimed space: 3.279kB
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ docker container prune[9Pimagescontainer stop b7[11Pps -ascontainer stop b7[11Pps -as
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ [7mdocker image prune[27mdocker image prune
+[?2004lWARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] t y
+Total reclaimed space: 0B
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ docker image prune[5Pps -asimage prune[K[7mnue? [y/N] y[27m
+[7mTotal reclaimed space: 0B[27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnue? [y/N] y
+Total reclaimed space: 0B
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[7mdocker image ls[27mdocker image ls
+[?2004lREPOSITORY   TAG       IMAGE ID       CREATED      SIZE
+nginx        latest    080ed0ed8312   8 days ago   142MB
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ dicjer [K[K[K[K[K[Kocker image rm nginx:latest 
+[?2004lUntagged: nginx:latest
+Untagged: nginx@sha256:2ab30d6ac53580a6db8b657abf0f68d75360ff5cc1670a85acb5bd85ba1b19c0
+Deleted: sha256:080ed0ed8312deca92e9a769b518cdfa20f5278359bd156f3469dd8fa532db6b
+Deleted: sha256:d78ffa8b3ff6145eb277087027ab2f07317ef3c8155dea0c68aba0be0dc9e357
+Deleted: sha256:52c16551e27714b78f78d51673e87d8327b6878f61f5ed37bbda99b30bd6258f
+Deleted: sha256:f71bcdb5f9b7b85bc15acf26db665dbd64f1e59fc13cbdfa7b7cac4fed5c3ac1
+Deleted: sha256:e5804950d08e966c6a00a433c67a12cff6347e5e2108865dfde6148f8d18130e
+Deleted: sha256:4da23111cc0445f1a069ac60b0575acfc86218f0783d48440f32b35bde461a41
+Deleted: sha256:3af14c9a24c941c626553628cf1942dcd94d40729777f2fcfbcd3b8a3dfccdd6
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ docker image rm nginx:latest ls[K
+[?2004lREPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ docker image lsrm nginx:latest ls[Kprune[5Pps -as
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2023-04-06 20:16:55+03:00 [COMMAND_EXIT_CODE="0"]

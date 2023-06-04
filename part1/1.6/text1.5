@@ -1,0 +1,16 @@
+docker images // tarkastaa imagien koot
+
+docker run -d --name webservice-alpine devopsdockeruh/simple-web-service:alpine server
+
+docker exec -it webservice-alpine sh
+
+apk update
+apk add curl
+
+sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+helsinki.fi
+
+ctrl + c
+
+exit

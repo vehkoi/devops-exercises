@@ -1,0 +1,36 @@
+Script started on 2023-04-08 01:15:20+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="173" LINES="46"]
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ [7mdocker run -d -it --name webservice devopsdockeruh/simple-web-service:ubuntu[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d -it --name webservice devopsdockeruh/simple-web-service:ubuntu
+[?2004lfbb6afbb27fa2763336abd22864ca7e114eabe978bab4c40d9e69c001dca92a2
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ [7mdocker exec -it devopsdockeruh/simple-web-service:ubuntu[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it devopsdockeruh/simple-web-service:ubuntu
+[?2004l"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Execute a command in a running container
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ [7mdocker exec -it webservice bash[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it webservice bash
+[?2004l]0;root@fbb6afbb27fa: /usr/src/approot@fbb6afbb27fa:/usr/src/app# tail -f ./text.log
+2023-04-07 22:15:31 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-04-07 22:15:33 +0000 UTC
+2023-04-07 22:15:35 +0000 UTC
+2023-04-07 22:15:37 +0000 UTC
+2023-04-07 22:15:39 +0000 UTC
+2023-04-07 22:15:41 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-04-07 22:15:43 +0000 UTC
+2023-04-07 22:15:45 +0000 UTC
+2023-04-07 22:15:47 +0000 UTC
+2023-04-07 22:15:49 +0000 UTC
+2023-04-07 22:15:51 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-04-07 22:15:53 +0000 UTC
+exit
+2023-04-07 22:15:55 +0000 UTC
+^C
+]0;root@fbb6afbb27fa: /usr/src/approot@fbb6afbb27fa:/usr/src/app# exit
+exit
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2023-04-08 01:16:00+03:00 [COMMAND_EXIT_CODE="130"]

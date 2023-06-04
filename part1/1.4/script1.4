@@ -1,0 +1,153 @@
+Script started on 2023-04-08 01:35:43+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="173" LINES="46"]
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ [7mdocker run -itd --name ubuntu-search ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; do[27m[7mn[27m[7me'[27m[A]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ docker run -itd --name ubuntu-search ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+[?2004lf04bc461228c046b23a6707ccd996691b928f24b01bd5ac74e5d840548bc40ca
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ [7mdocker exec -it ubuntu-search bash[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it ubuntu-search bash
+[?2004l[?2004h]0;root@f04bc461228c: /root@f04bc461228c:/# [7mapt-get update[27mapt-get update
+[?2004l0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+0% [1 InRelease 4051 B/270 kB 1%] [Connecting to security.ubuntu.com (91.189.91.38)]                                                                                    Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+                                                                                    0% [1 InRelease 98.2 kB/270 kB 36%] [2 InRelease 4034 B/110 kB 4%]                                                                  0% [2 InRelease 14.2 kB/110 kB 13%]                                   Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+0% [3 InRelease 5499 B/119 kB 5%] [2 InRelease 14.2 kB/110 kB 13%]                                                                  0% [2 InRelease 20.0 kB/110 kB 18%]0% [Waiting for headers] [2 InRelease 28.6 kB/110 kB 26%]                                                         Get:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [108 kB]
+0% [4 InRelease 3503 B/108 kB 3%] [2 InRelease 37.3 kB/110 kB 34%]                                                                  0% [2 InRelease 43.1 kB/110 kB 39%]0% [Waiting for headers] [2 InRelease 43.1 kB/110 kB 39%]                                                         Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+0% [5 Packages 4133 B/1792 kB 0%] [2 InRelease 46.0 kB/110 kB 42%]0% [5 Packages 28.7 kB/1792 kB 2%] [2 InRelease 48.9 kB/110 kB 44%]                                                                   0% [2 InRelease 99.6 kB/110 kB 90%]                                   Get:6 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+0% [6 Packages 195 kB/17.5 MB 1%] [2 InRelease 99.6 kB/110 kB 90%]0% [5 Packages store 0 B] [6 Packages 197 kB/17.5 MB 1%] [2 InRelease 99.6 kB/110 kB 90%]                                                                                         0% [6 Packages 1716 kB/17.5 MB 10%] [2 InRelease 99.6 kB/110 kB 90%]                                                                    0% [6 Packages 1809 kB/17.5 MB 10%]25% [6 Packages 1809 kB/17.5 MB 10%]                                    Get:7 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [908 kB]
+33% [6 Packages 4260 kB/17.5 MB 24%] [7 Packages 1239 B/908 kB 0%]52% [6 Packages 10.2 MB/17.5 MB 58%] [7 Packages 546 kB/908 kB 60%]                                                                   62% [6 Packages 12.9 MB/17.5 MB 74%]62% [7 Packages store 0 B] [6 Packages 12.9 MB/17.5 MB 74%]                                                           63% [6 Packages 13.2 MB/17.5 MB 75%] [Waiting for headers]                                                          Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [914 kB]
+68% [6 Packages 14.8 MB/17.5 MB 84%] [8 Packages 4096 B/914 kB 0%]                                                                  77% [Waiting for headers] [8 Packages 452 kB/914 kB 49%]                                                        Get:9 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
+77% [9 Packages 30.2 kB/164 kB 18%] [8 Packages 452 kB/914 kB 49%]78% [6 Packages store 0 B] [9 Packages 44.8 kB/164 kB 27%] [8 Packages 452 kB/914 kB 49%]                                                                                         78% [6 Packages store 0 B] [Waiting for headers] [8 Packages 452 kB/914 kB 49%]                                                                               Get:10 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+78% [6 Packages store 0 B] [10 Packages 45.1 kB/266 kB 17%] [8 Packages 452 kB/914 kB 49%]                                                                                          79% [6 Packages store 0 B] [8 Packages 549 kB/914 kB 60%]                                                         Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [28.7 kB]
+79% [6 Packages store 0 B] [11 Packages 26.5 kB/28.7 kB 92%] [8 Packages 549 kB/914 kB 60%]                                                                                           79% [6 Packages store 0 B] [8 Packages 549 kB/914 kB 60%]                                                         Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [963 kB]
+79% [6 Packages store 0 B] [12 Packages 29.8 kB/963 kB 3%] [8 Packages 549 kB/914 kB 60%]                                                                                         82% [6 Packages store 0 B] [8 Packages 549 kB/914 kB 60%]                                                         Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1149 kB]
+82% [6 Packages store 0 B] [13 Packages 38.4 kB/1149 kB 3%] [8 Packages 549 kB/914 kB 60%]                                                                                          87% [6 Packages store 0 B] [13 Packages 1149 kB/1149 kB 100%] [Waiting for headers]                                                                                   Get:14 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [909 kB]
+                                                                                   87% [6 Packages store 0 B] [Waiting for headers] [14 Packages 93.4 kB/909 kB 10%]                                                                                 Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1251 kB]
+87% [6 Packages store 0 B] [15 Packages 65.5 kB/1251 kB 5%] [14 Packages 98.7 kB/909 kB 11%]                                                                                            92% [6 Packages store 0 B] [14 Packages 538 kB/909 kB 59%]93% [6 Packages store 0 B] [Connecting to archive.ubuntu.com (91.189.91.39)]                                                                            Get:16 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [23.2 kB]
+93% [6 Packages store 0 B] [Connecting to archive.ubuntu.com (91.189.91.39)] [16 Packages 23.2 kB/23.2 kB 100%]                                                                                                               93% [6 Packages store 0 B] [Connecting to archive.ubuntu.com (91.189.91.39)]                                                                            94% [Waiting for headers]94% [9 Packages store 0 B] [Waiting for headers]                                                94% [Waiting for headers]94% [10 Packages store 0 B] [Waiting for headers]                                                 95% [Waiting for headers]95% [11 Packages store 0 B] [Waiting for headers]                                                 95% [Waiting for headers]95% [12 Packages store 0 B] [Waiting for headers]                                                 96% [Waiting for headers]96% [8 Packages store 0 B] [Waiting for headers]                                                Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [23.3 kB]
+96% [8 Packages store 0 B] [17 Packages 4137 B/23.3 kB 18%]                                                           96% [17 Packages 14.3 kB/23.3 kB 61%]96% [13 Packages store 0 B] [17 Packages 14.3 kB/23.3 kB 61%]                                                             97% [17 Packages 14.3 kB/23.3 kB 61%]97% [15 Packages store 0 B] [17 Packages 14.3 kB/23.3 kB 61%]                                                             98% [17 Packages 14.3 kB/23.3 kB 61%]98% [14 Packages store 0 B] [17 Packages 14.3 kB/23.3 kB 61%]                                                             98% [17 Packages 14.3 kB/23.3 kB 61%]98% [16 Packages store 0 B] [17 Packages 14.3 kB/23.3 kB 61%]                                                             99% [17 Packages 14.3 kB/23.3 kB 61%]                                     99% [Working]99% [17 Packages store 0 B] [Waiting for headers]                                                 99% [Waiting for headers]                         Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [49.0 kB]
+99% [18 Packages 2689 B/49.0 kB 5%]                                   99% [Working]99% [18 Packages store 0 B]                           100% [Working]              Fetched 26.5 MB in 3s (9014 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 70%Reading package lists... 70%Reading package lists... 71%Reading package lists... 71%Reading package lists... 76%Reading package lists... 76%Reading package lists... 81%Reading package lists... 81%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+[?2004h]0;root@f04bc461228c: /root@f04bc461228c:/# [7mapt-get -y install curl[27mapt-get -y install curl
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 70%Reading package lists... 70%Reading package lists... 71%Reading package lists... 71%Reading package lists... 76%Reading package lists... 76%Reading package lists... 81%Reading package lists... 81%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates libbrotli1 libcurl4 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4 openssl
+  publicsuffix
+Suggested packages:
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql
+The following NEW packages will be installed:
+  ca-certificates curl libbrotli1 libcurl4 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4 openssl
+  publicsuffix
+0 upgraded, 15 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2977 kB of archives.
+After this operation, 7100 kB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 openssl amd64 3.0.2-0ubuntu1.8 [1184 kB]
+0% [1 openssl 2611 B/1184 kB 0%]                                33% [Working]             Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 ca-certificates all 20211016ubuntu0.22.04.1 [144 kB]
+33% [2 ca-certificates 4061 B/144 kB 3%]                                        38% [Waiting for headers]                         Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnghttp2-14 amd64 1.43.0-1build3 [76.3 kB]
+38% [3 libnghttp2-14 4289 B/76.3 kB 6%]                                       42% [Waiting for headers]                         Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpsl5 amd64 0.21.0-1.2build2 [58.4 kB]
+42% [4 libpsl5 3052 B/58.4 kB 5%]                                 45% [Waiting for headers]                         Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 publicsuffix all 20211207.1025-1 [129 kB]
+45% [5 publicsuffix 5197 B/129 kB 4%]                                     49% [Waiting for headers]                         Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbrotli1 amd64 1.0.9-2build6 [315 kB]
+50% [6 libbrotli1 2858 B/315 kB 1%]                                   59% [Waiting for headers]                         Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg2-3ubuntu1.2 [20.5 kB]
+59% [7 libsasl2-modules-db 4525 B/20.5 kB 22%]                                              61% [Waiting for headers]                         Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-2 amd64 2.1.27+dfsg2-3ubuntu1.2 [53.8 kB]
+61% [8 libsasl2-2 5488 B/53.8 kB 10%]                                     64% [Waiting for headers]                         Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-2.5-0 amd64 2.5.14+dfsg-0ubuntu0.22.04.1 [183 kB]
+64% [9 libldap-2.5-0 16.5 kB/183 kB 9%]                                       70% [Waiting for headers]                         Get:10 http://archive.ubuntu.com/ubuntu jammy/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build4 [58.2 kB]
+70% [10 librtmp1 5398 B/58.2 kB 9%]                                   73% [Waiting for headers]                         Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 libssh-4 amd64 0.9.6-2build1 [184 kB]
+75% [11 libssh-4 57.3 kB/184 kB 31%]                                    79% [Working]             Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.10 [290 kB]
+79% [12 libcurl4 4061 B/290 kB 1%]86% [12 libcurl4 260 kB/290 kB 90%]                                   89% [Working]             Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 curl amd64 7.81.0-1ubuntu1.10 [194 kB]
+89% [13 curl 2613 B/194 kB 1%]                              95% [Working]             Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-common all 2.5.14+dfsg-0ubuntu0.22.04.1 [15.9 kB]
+95% [14 libldap-common 2264 B/15.9 kB 14%]                                          97% [Working]             Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-modules amd64 2.1.27+dfsg2-3ubuntu1.2 [68.8 kB]
+97% [15 libsasl2-modules 0 B/68.8 kB 0%]                                        100% [Working]              Fetched 2977 kB in 1s (2095 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package openssl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4395 files and directories currently installed.)
+Preparing to unpack .../00-openssl_3.0.2-0ubuntu1.8_amd64.deb ...
+Unpacking openssl (3.0.2-0ubuntu1.8) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20211016ubuntu0.22.04.1_all.deb ...
+Unpacking ca-certificates (20211016ubuntu0.22.04.1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../02-libnghttp2-14_1.43.0-1build3_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.43.0-1build3) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../03-libpsl5_0.21.0-1.2build2_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.0-1.2build2) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../04-publicsuffix_20211207.1025-1_all.deb ...
+Unpacking publicsuffix (20211207.1025-1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../05-libbrotli1_1.0.9-2build6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2build6) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../06-libsasl2-modules-db_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../07-libsasl2-2_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../08-libldap-2.5-0_2.5.14+dfsg-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.14+dfsg-0ubuntu0.22.04.1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../09-librtmp1_2.4+20151223.gitfa8646d.1-2build4_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Selecting previously unselected package libssh-4:amd64.
+Preparing to unpack .../10-libssh-4_0.9.6-2build1_amd64.deb ...
+Unpacking libssh-4:amd64 (0.9.6-2build1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../11-libcurl4_7.81.0-1ubuntu1.10_amd64.deb ...
+Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.10) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../12-curl_7.81.0-1ubuntu1.10_amd64.deb ...
+Unpacking curl (7.81.0-1ubuntu1.10) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../13-libldap-common_2.5.14+dfsg-0ubuntu0.22.04.1_all.deb ...
+Unpacking libldap-common (2.5.14+dfsg-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../14-libsasl2-modules_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up libpsl5:amd64 (0.21.0-1.2build2) ...
+Setting up libbrotli1:amd64 (1.0.9-2build6) ...
+Setting up libsasl2-modules:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up libnghttp2-14:amd64 (1.43.0-1build3) ...
+Setting up libldap-common (2.5.14+dfsg-0ubuntu0.22.04.1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Setting up libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up libssh-4:amd64 (0.9.6-2build1) ...
+Setting up openssl (3.0.2-0ubuntu1.8) ...
+Setting up publicsuffix (20211207.1025-1) ...
+Setting up libldap-2.5-0:amd64 (2.5.14+dfsg-0ubuntu0.22.04.1) ...
+Setting up ca-certificates (20211016ubuntu0.22.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+124 added, 0 removed; done.
+Setting up libcurl4:amd64 (7.81.0-1ubuntu1.10) ...
+Setting up curl (7.81.0-1ubuntu1.10) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Processing triggers for ca-certificates (20211016ubuntu0.22.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+[?2004h]0;root@f04bc461228c: /root@f04bc461228c:/# [7mexit[27mexit
+[?2004lexit
+[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ [7mdocker attach ubuntu-search[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker attach ubuntu-search
+[?2004lhelsinki.fi^[[C    
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.20.1</center>
+</body>
+</html>
+Input website:
+exit
+Searching..
+curl: (6) Could not resolve host: exit
+Input website:
+^C[?2004h]0;vehkoi@vehkoi: ~[01;32mvehkoi@vehkoi[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2023-04-08 01:37:58+03:00 [COMMAND_EXIT_CODE="130"]
