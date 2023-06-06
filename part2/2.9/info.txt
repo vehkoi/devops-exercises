@@ -1,0 +1,1 @@
+Had to change frontends Dockerfile to ENV REACT_APP_BACKEND_URL=http://localhost/api/

@@ -1,0 +1,1 @@
+Removed port configurations from docker-compose.yml file. All messages worked.

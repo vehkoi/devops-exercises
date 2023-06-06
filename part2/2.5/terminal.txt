@@ -1,0 +1,3 @@
+$ docker compose up -d --scale compute=3
+
+(docker-compose.yml etc. other files in https://github.com/docker-hy/material-applications/tree/main/scaling-exercise stay untoched)
