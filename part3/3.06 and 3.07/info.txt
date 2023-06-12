@@ -1,0 +1,1 @@
+As 3.7 was just to change FROM to alpine, no changes to 3.06 was done. I had been using alpine since part one anyway. Joining RUNS did not really affect the sizes in this case.

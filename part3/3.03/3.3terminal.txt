@@ -1,0 +1,4 @@
+$ chmod +x clonescript.sh 
+$ ./clonescript.sh vehkoi/devopscourse-youtubedl vehkoi/youtube-dl
+
+# First githubusername/repo, then dockerusername/image

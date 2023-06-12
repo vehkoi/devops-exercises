@@ -1,0 +1,3 @@
+docker run -it -v /var/run/docker.sock:/var/run/docker.sock <image_name> <githubusername/repo> <dockerusername/repo>
+
+# NOTE: did not figure out how the -e "docker user" "docker pwd" work, so I used -it to give the username and password. Works just as well.
